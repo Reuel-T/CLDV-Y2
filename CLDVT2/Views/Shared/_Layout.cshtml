@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CLDVT2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/RTCSS/neumorphism.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-transparent navbar-light shadow-soft navbar-theme-primary mb-4">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Products" asp-action="Index"><h1><strong>ABC Supermarket</strong></h1></a>
+                <div class="nav-wrapper position-relative">
+                    <ul class="nav nav-pills nav-fill flex-column flex-sm-row">
+                        <li class="nav-item">
+                            <a asp-area="" asp-controller="Products" asp-action="Index"><button class="btn btn-primary text-dark mr-2 mb-2" type="button">Home</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
