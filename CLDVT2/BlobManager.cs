@@ -10,7 +10,7 @@ namespace CLDVT2
 {
     public class BlobManager
     {
-        static string connectionString = "DefaultEndpointsProtocol=https;AccountName=cldstorage19012817;AccountKey=Q+4QkiQH2FLqpwKQExyqjNgkbyG28AE6ZLEGQcyXox57vvHYr+SYKV9q5nDiQaZoveZoBOmuY6SpD7gMn5lxiQ==;EndpointSuffix=core.windows.net";
+        static string connectionString = "DefaultEndpointsProtocol=https;AccountName=XXX;AccountKey=XXX==;EndpointSuffix=core.windows.net";
         static string containerName = "testbox";
 
         public static string uploadImage(IFormFile image)
